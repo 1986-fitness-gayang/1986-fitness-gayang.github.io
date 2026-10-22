@@ -25,6 +25,10 @@ body{margin:0;background:#0b0d10}
 a{color:#f2f0eb}a:hover{color:#d4ff3a}
 @keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 @media (prefers-reduced-motion: reduce){.marq{animation:none !important}}
+summary::-webkit-details-marker{display:none}
+summary::marker{content:''}
+details[open] summary span:last-child{transform:rotate(45deg)}
+summary span:last-child{display:inline-block;transition:transform .2s}
 </style>
 <style>img, video { max-width: 100%; }</style>
 </head>
@@ -74,6 +78,7 @@ a{color:#f2f0eb}a:hover{color:#d4ff3a}
 <a href="#trainers" style="text-decoration: none;">트레이너</a>
 <a href="#reviews" style="text-decoration: none;">후기</a>
 <a href="#visit" style="text-decoration: none;">오시는 길</a>
+<a href="#qna" style="text-decoration: none;">Q&amp;A</a>
 <a href="#visit" style="text-decoration: none; background: #d4ff3a; color: #0b0d10; font-weight: 900; padding: 14px 22px; min-height: 44px; box-sizing: border-box; display: inline-flex; align-items: center; border-radius: 999px;">무료체험 신청</a>
 </nav>
 </div>
@@ -441,6 +446,77 @@ a{color:#f2f0eb}a:hover{color:#d4ff3a}
 <span style="position: absolute; right: 12px; bottom: 10px; font-size: 11px; color: #f2f0eb; background: rgba(11,13,16,0.6); padding: 4px 8px; border-radius: 6px;">지도 데이터 ©Google</span>
 </div>
 </div>
+</div>
+</div>
+
+<!-- ===== Q&A ===== -->
+<div id="qna" style="background: #0b0d10; color: #f2f0eb; border-top: 1px solid #1f242b;">
+<div style="max-width: 1280px; margin: 0 auto; padding: 120px 32px; display: flex; flex-direction: column; gap: 48px;">
+<div style="display: flex; flex-direction: column; gap: 12px;">
+<span style="font-family: 'Bebas Neue', sans-serif; font-size: 22px; letter-spacing: 2px; color: #d4ff3a;">05 — Q&amp;A</span>
+<h2 style="margin: 0; font-size: clamp(40px, 5vw, 68px); font-weight: 900; line-height: 1.08; letter-spacing: -0.05em;">자주 묻는 질문</h2>
+</div>
+<div style="display: flex; flex-direction: column; gap: 12px;">
+
+<details style="background: #15181d; border: 1px solid #2a2f37; border-radius: 18px; overflow: hidden;">
+<summary style="cursor: pointer; list-style: none; padding: 24px 26px; display: flex; align-items: flex-start; gap: 16px; font-size: 18px; font-weight: 800; line-height: 1.5;"><span style="font-family: 'Bebas Neue', sans-serif; font-size: 24px; line-height: 1.15; color: #d4ff3a;">01</span><span style="flex: 1 1 auto; min-width: 0;">위치가 어디인가요?</span><span aria-hidden="true" style="font-size: 22px; color: #8a9099;">+</span></summary>
+<div style="padding: 0 26px 26px 64px; font-size: 16px; line-height: 1.85; color: #c3c7cd; white-space: pre-line;">서울특별시 강서구 양천로 500 노블리움오피스텔 307호, 308호
+가양역 6·7번 출구 바로 앞 파리바게트 건물입니다.</div>
+</details>
+
+<details style="background: #15181d; border: 1px solid #2a2f37; border-radius: 18px; overflow: hidden;">
+<summary style="cursor: pointer; list-style: none; padding: 24px 26px; display: flex; align-items: flex-start; gap: 16px; font-size: 18px; font-weight: 800; line-height: 1.5;"><span style="font-family: 'Bebas Neue', sans-serif; font-size: 24px; line-height: 1.15; color: #d4ff3a;">02</span><span style="flex: 1 1 auto; min-width: 0;">운영시간이 어떻게 되나요?</span><span aria-hidden="true" style="font-size: 22px; color: #8a9099;">+</span></summary>
+<div style="padding: 0 26px 26px 64px; font-size: 16px; line-height: 1.85; color: #c3c7cd; white-space: pre-line;">24시간 운영하고 있고, 둘째 주 일요일이 정기 휴관일입니다.
+휴관일 전날 토요일 21시에 마감하여 월요일 07시에 오픈한 뒤 24시간 운영합니다.
+그 외 공휴일이나 명절 휴무는 네이버 플레이스 운영시간을 확인해 주세요.</div>
+</details>
+
+<details style="background: #15181d; border: 1px solid #2a2f37; border-radius: 18px; overflow: hidden;">
+<summary style="cursor: pointer; list-style: none; padding: 24px 26px; display: flex; align-items: flex-start; gap: 16px; font-size: 18px; font-weight: 800; line-height: 1.5;"><span style="font-family: 'Bebas Neue', sans-serif; font-size: 24px; line-height: 1.15; color: #d4ff3a;">03</span><span style="flex: 1 1 auto; min-width: 0;">주차는 어떻게 되나요?</span><span aria-hidden="true" style="font-size: 22px; color: #8a9099;">+</span></summary>
+<div style="padding: 0 26px 26px 64px; font-size: 16px; line-height: 1.85; color: #c3c7cd; white-space: pre-line;">최대 4시간 주차가 가능하며, 노블리움오피스텔 지상 1층부터 지하 2층까지 주차하실 수 있습니다.</div>
+</details>
+
+<details style="background: #15181d; border: 1px solid #2a2f37; border-radius: 18px; overflow: hidden;">
+<summary style="cursor: pointer; list-style: none; padding: 24px 26px; display: flex; align-items: flex-start; gap: 16px; font-size: 18px; font-weight: 800; line-height: 1.5;"><span style="font-family: 'Bebas Neue', sans-serif; font-size: 24px; line-height: 1.15; color: #d4ff3a;">04</span><span style="flex: 1 1 auto; min-width: 0;">금액은 어떻게 되나요?</span><span aria-hidden="true" style="font-size: 22px; color: #8a9099;">+</span></summary>
+<div style="padding: 0 26px 26px 64px; font-size: 16px; line-height: 1.85; color: #c3c7cd; white-space: pre-line;">금액은 네이버 플레이스에서 확인이 가능합니다.</div>
+</details>
+
+<details style="background: #15181d; border: 1px solid #2a2f37; border-radius: 18px; overflow: hidden;">
+<summary style="cursor: pointer; list-style: none; padding: 24px 26px; display: flex; align-items: flex-start; gap: 16px; font-size: 18px; font-weight: 800; line-height: 1.5;"><span style="font-family: 'Bebas Neue', sans-serif; font-size: 24px; line-height: 1.15; color: #d4ff3a;">05</span><span style="flex: 1 1 auto; min-width: 0;">일일권 금액은 어떻게 되나요?</span><span aria-hidden="true" style="font-size: 22px; color: #8a9099;">+</span></summary>
+<div style="padding: 0 26px 26px 64px; font-size: 16px; line-height: 1.85; color: #c3c7cd; white-space: pre-line;">일일권 금액은 2만원입니다. 이벤트로 현재 리뷰 작성 시 1만원에 이용 가능하십니다.</div>
+</details>
+
+<details style="background: #15181d; border: 1px solid #2a2f37; border-radius: 18px; overflow: hidden;">
+<summary style="cursor: pointer; list-style: none; padding: 24px 26px; display: flex; align-items: flex-start; gap: 16px; font-size: 18px; font-weight: 800; line-height: 1.5;"><span style="font-family: 'Bebas Neue', sans-serif; font-size: 24px; line-height: 1.15; color: #d4ff3a;">06</span><span style="flex: 1 1 auto; min-width: 0;">상담은 어떻게 해주시나요?</span><span aria-hidden="true" style="font-size: 22px; color: #8a9099;">+</span></summary>
+<div style="padding: 0 26px 26px 64px; font-size: 16px; line-height: 1.85; color: #c3c7cd; white-space: pre-line;">유산소존과 웨이트존이 분리되어 있어서, 시설을 먼저 보여드린 후에 가격을 알려드리고 있습니다.</div>
+</details>
+
+<details style="background: #15181d; border: 1px solid #2a2f37; border-radius: 18px; overflow: hidden;">
+<summary style="cursor: pointer; list-style: none; padding: 24px 26px; display: flex; align-items: flex-start; gap: 16px; font-size: 18px; font-weight: 800; line-height: 1.5;"><span style="font-family: 'Bebas Neue', sans-serif; font-size: 24px; line-height: 1.15; color: #d4ff3a;">07</span><span style="flex: 1 1 auto; min-width: 0;">PT 상담과 진행은 어떤 방식으로 하시나요?</span><span aria-hidden="true" style="font-size: 22px; color: #8a9099;">+</span></summary>
+<div style="padding: 0 26px 26px 64px; font-size: 16px; line-height: 1.85; color: #c3c7cd; white-space: pre-line;">PT 상담은 네이버에서 담당 선생님을 지정하여 받으실 수 있습니다.
+그 외 상담 목적에 따른 맞춤 수업을 진행합니다.</div>
+</details>
+
+<details style="background: #15181d; border: 1px solid #2a2f37; border-radius: 18px; overflow: hidden;">
+<summary style="cursor: pointer; list-style: none; padding: 24px 26px; display: flex; align-items: flex-start; gap: 16px; font-size: 18px; font-weight: 800; line-height: 1.5;"><span style="font-family: 'Bebas Neue', sans-serif; font-size: 24px; line-height: 1.15; color: #d4ff3a;">08</span><span style="flex: 1 1 auto; min-width: 0;">운동이 처음인데 PT를 받지 않아도 운동할 수 있나요?</span><span aria-hidden="true" style="font-size: 22px; color: #8a9099;">+</span></summary>
+<div style="padding: 0 26px 26px 64px; font-size: 16px; line-height: 1.85; color: #c3c7cd; white-space: pre-line;">가능합니다. 센터에서 데일리 운동 프로그램을 매일 바꿔가며 진행하고 있습니다.
+운동기구마다 QR코드가 있어 사용법을 확인하실 수 있고, QR코드로 보기 힘드시면 TV에서도 기구 운동 방법이 영상으로 재생되고 있으니 참고하여 운동하시면 됩니다.</div>
+</details>
+
+<details style="background: #15181d; border: 1px solid #2a2f37; border-radius: 18px; overflow: hidden;">
+<summary style="cursor: pointer; list-style: none; padding: 24px 26px; display: flex; align-items: flex-start; gap: 16px; font-size: 18px; font-weight: 800; line-height: 1.5;"><span style="font-family: 'Bebas Neue', sans-serif; font-size: 24px; line-height: 1.15; color: #d4ff3a;">09</span><span style="flex: 1 1 auto; min-width: 0;">PT 체험이 가능한가요?</span><span aria-hidden="true" style="font-size: 22px; color: #8a9099;">+</span></summary>
+<div style="padding: 0 26px 26px 64px; font-size: 16px; line-height: 1.85; color: #c3c7cd; white-space: pre-line;">가능합니다. 네이버 플레이스에서 1986피트니스 가양점을 검색하신 후, 예약창에서 원하시는 선생님에게 예약하시면 시간에 맞춰 체험이 가능합니다.</div>
+</details>
+
+<details style="background: #15181d; border: 1px solid #2a2f37; border-radius: 18px; overflow: hidden;">
+<summary style="cursor: pointer; list-style: none; padding: 24px 26px; display: flex; align-items: flex-start; gap: 16px; font-size: 18px; font-weight: 800; line-height: 1.5;"><span style="font-family: 'Bebas Neue', sans-serif; font-size: 24px; line-height: 1.15; color: #d4ff3a;">10</span><span style="flex: 1 1 auto; min-width: 0;">운동할 때 뭘 챙겨가야 하나요?</span><span aria-hidden="true" style="font-size: 22px; color: #8a9099;">+</span></summary>
+<div style="padding: 0 26px 26px 64px; font-size: 16px; line-height: 1.85; color: #c3c7cd; white-space: pre-line;">외부 신발(슬리퍼·크록스·샌들 제외)과 운동복이 필요합니다.
+운동복은 센터에서 구매가 가능하며 매일 제공됩니다.
+샤워시설 이용 시 샴푸와 바디워시가 제공되며, 그 외 샤워용품이나 화장품 등은 챙겨오셔서 이용하시면 됩니다.</div>
+</details>
+
+</div>
+<p style="margin: 0; font-size: 14px; color: #8a9099;">더 궁금한 점은 네이버 톡톡이나 카카오톡 채널, 전화 02-2658-5607 로 문의해 주세요.</p>
 </div>
 </div>
 
