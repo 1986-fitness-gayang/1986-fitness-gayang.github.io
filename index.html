@@ -337,7 +337,7 @@ figure[data-rev] blockquote{-webkit-line-clamp:8 !important;font-size:14.5px !im
 
 </div>
 <div data-qviewport="1" style="overflow: hidden;">
-<div data-qtrack="1" style="display: flex; gap: 20px; align-items: stretch; height: 440px; transform: translateX(calc((100% + 20px) / -4 * 0)); transition: transform 0.55s cubic-bezier(0.4, 0, 0.2, 1);">
+<div data-qtrack="1" style="display: flex; gap: 20px; align-items: stretch; height: 440px; transform: translateX(calc((100% + 20px) / -4 * 0)); transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);">
 
 
 <figure data-rev="김민형" style="flex: 0 0 calc((100% - 60px) / 4); box-sizing: border-box; min-width: 0; margin: 0; background: #15181d; border: 1px solid #2a2f37; border-radius: 22px; padding: 18px; display: flex; flex-direction: column; gap: 14px;">
@@ -800,7 +800,7 @@ figure[data-rev] blockquote{-webkit-line-clamp:8 !important;font-size:14.5px !im
     i = 0;
     track.style.transform = 'translateX(0px)';
     if (timer) clearInterval(timer);
-    timer = setInterval(slide, 3500);
+    timer = setInterval(slide, 800);
   }
   vp.addEventListener('mouseenter', function () { hover = true; });
   vp.addEventListener('mouseleave', function () { hover = false; });
